@@ -1,2 +1,2 @@
-# ardani.github.io
-this is my portofolio
+### ardani.github.io
+simple page for show my portofolio
