@@ -24,7 +24,27 @@
   <script src="js/modernizr.custom.js"></script>
 </head>
 <body id="home">
- <script type='text/javascript' data-cfasync='false'>window.purechatApi = { l: [], t: [], on: function () { this.l.push(arguments); } }; (function () { var done = false; var script = document.createElement('script'); script.async = true; script.type = 'text/javascript'; script.src = 'https://app.purechat.com/VisitorWidget/WidgetScript'; document.getElementsByTagName('HEAD').item(0).appendChild(script); script.onreadystatechange = script.onload = function (e) { if (!done && (!this.readyState || this.readyState == 'loaded' || this.readyState == 'complete')) { var w = new PCWidget({c: 'e5c5759e-9fcf-492c-80ca-8844593a517f', f: true }); done = true; } }; })();</script>
+ <!--Start of HappyFox Live Chat Script-->
+<script>
+ window.HFCHAT_CONFIG = {
+     EMBED_TOKEN: "01e6d510-25a7-11e6-bccb-0fdb538320c4",
+     ACCESS_TOKEN: "0c08d85f1e004cc8b5dc3ec928f8f505",
+     HOST_URL: "https://happyfoxchat.com",
+     ASSETS_URL: "https://d1l7z5ofrj6ab8.cloudfront.net/visitor"
+ };
+
+(function() {
+  var scriptTag = document.createElement('script');
+  scriptTag.type = 'text/javascript';
+  scriptTag.async = true;
+  scriptTag.src = window.HFCHAT_CONFIG.ASSETS_URL + '/js/widget-loader.js';
+
+  var s = document.getElementsByTagName('script')[0];
+  s.parentNode.insertBefore(scriptTag, s);
+})();
+</script>
+<!--End of HappyFox Live Chat Script-->
+
   <div id="container">
     <!--begin header-->
     <header>
