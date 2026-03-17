@@ -22,43 +22,7 @@
 	<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
 	<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
 	<link rel="manifest" href="site.webmanifest">
-	<script src="https://cdn.tailwindcss.com"></script>
-	<script>
-		tailwind.config = {
-			theme: {
-				extend: {
-					fontFamily: {
-						sans: ['Inter', 'system-ui', 'sans-serif'],
-						mono: ['Fira Code', 'monospace'],
-					},
-					colors: {
-						drac: {
-							bg: '#282A36',
-							current: '#44475A',
-							fg: '#F8F8F2',
-							comment: '#ABB6D6',
-							cyan: '#8BE9FD',
-							green: '#50FA7B',
-							orange: '#FFB86C',
-							pink: '#FF79C6',
-							purple: '#BD93F9',
-							red: '#FF5555',
-							yellow: '#F1FA8C',
-						},
-					},
-					keyframes: {
-						'fade-up': {
-							'0%': { opacity: '0', transform: 'translateY(20px)' },
-							'100%': { opacity: '1', transform: 'translateY(0)' },
-						},
-					},
-					animation: {
-						'fade-up': 'fade-up 0.5s ease-out forwards',
-					},
-				},
-			},
-		}
-	</script>
+	<link rel="stylesheet" href="style.css">
 	<style>
 		.reveal { opacity: 0; transform: translateY(24px); transition: all 0.6s cubic-bezier(0.16, 1, 0.3, 1); }
 		.reveal.visible { opacity: 1; transform: translateY(0); }
@@ -103,7 +67,7 @@
 		<div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 pt-16 sm:pt-20 pb-12 sm:pb-16 relative">
 			<div class="flex flex-col sm:flex-row items-center sm:items-start gap-6 sm:gap-8">
 				<div class="relative flex-shrink-0">
-					<img class="w-28 h-28 sm:w-32 sm:h-32 rounded-2xl object-cover ring-2 ring-drac-purple/30 shadow-lg" src="ardani.jpeg?v=54a33e1d" alt="Ardani Rohman profile photo" width="128" height="128" fetchpriority="high" loading="eager" decoding="async">
+					<img class="w-28 h-28 sm:w-32 sm:h-32 rounded-2xl object-cover ring-2 ring-drac-purple/30 shadow-lg" src="ardani.jpeg?v=54a33e1d" alt="Ardani Rohman profile photo" width="558" height="600" fetchpriority="high" loading="eager" decoding="async">
 					<span class="absolute -bottom-1 -right-1 w-5 h-5 bg-drac-green rounded-full ring-3 ring-drac-bg" title="Open to opportunities"></span>
 				</div>
 				<div class="text-center sm:text-left animate-fade-up">
