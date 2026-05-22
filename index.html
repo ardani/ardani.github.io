@@ -39,6 +39,17 @@
 		.glow-cyan:hover { box-shadow: 0 0 20px rgba(139,233,253,0.15), 0 0 40px rgba(139,233,253,0.05); }
 		.glow-pink:hover { box-shadow: 0 0 20px rgba(255,121,198,0.15), 0 0 40px rgba(255,121,198,0.05); }
 		.glow-green:hover { box-shadow: 0 0 20px rgba(80,250,123,0.15), 0 0 40px rgba(80,250,123,0.05); }
+
+		/* Project card utilities (not in prebuilt CSS) */
+		.bg-drac-pink\/10 { background-color: rgba(255,121,198,0.10); }
+		.bg-drac-yellow\/10 { background-color: rgba(241,250,140,0.10); }
+		.border-drac-pink\/20 { border-color: rgba(255,121,198,0.20); }
+		.border-drac-yellow\/20 { border-color: rgba(241,250,140,0.20); }
+		.hover\:bg-drac-bg\/70:hover { background-color: rgba(40,42,54,0.70); }
+		.hover\:border-drac-purple\/40:hover { border-color: rgba(189,147,249,0.40); }
+		.hover\:border-drac-pink\/40:hover { border-color: rgba(255,121,198,0.40); }
+		.group:hover .group-hover\:text-drac-pink { color: #FF79C6; }
+		.group:hover .group-hover\:text-drac-purple { color: #BD93F9; }
 	</style>
 </head>
 <body class="bg-drac-bg text-drac-fg font-sans antialiased">
@@ -52,6 +63,7 @@
 			<div class="flex items-center gap-1 text-sm">
 				<a href="#about" class="px-3 py-1.5 rounded-lg text-drac-comment hover:text-drac-fg hover:bg-drac-current/50 transition-all">About</a>
 				<a href="#experience" class="px-3 py-1.5 rounded-lg text-drac-comment hover:text-drac-fg hover:bg-drac-current/50 transition-all">Experience</a>
+					<a href="#projects" class="px-3 py-1.5 rounded-lg text-drac-comment hover:text-drac-fg hover:bg-drac-current/50 transition-all">Projects</a>
 				<a href="#skills" class="px-3 py-1.5 rounded-lg text-drac-comment hover:text-drac-fg hover:bg-drac-current/50 transition-all">Skills</a>
 				<a href="resume.html" target="_blank"
 					class="ml-2 px-4 py-1.5 rounded-lg bg-drac-purple text-drac-bg text-sm font-semibold hover:bg-drac-purple/80 transition-all">
@@ -239,6 +251,71 @@
 						<li>Guided technical direction across multiple projects, ensuring code quality, performance, and scalability.</li>
 					</ul>
 				</article>
+			</div>
+		</section>
+
+		<!-- Open Source Projects -->
+		<section id="projects" class="bg-drac-current/40 rounded-xl border border-drac-current/60 p-6 sm:p-8 glow-green transition-all reveal" aria-labelledby="projects-heading">
+			<h2 id="projects-heading" class="text-xl font-bold flex items-center gap-2.5 mb-2">
+				<span class="w-8 h-8 rounded-lg bg-drac-green/15 flex items-center justify-center flex-shrink-0">
+					<svg class="w-4 h-4 text-drac-green" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M17.25 6.75 22.5 12l-5.25 5.25m-10.5 0L1.5 12l5.25-5.25M14.25 4.5l-4.5 15" /></svg>
+				</span>
+				Open Source Projects
+			</h2>
+			<p class="text-drac-comment text-sm mb-5">Side projects and tools I've open-sourced for the community.</p>
+
+			<div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+				<!-- claude-capture -->
+				<a href="https://github.com/aa-ardanirahman/claude-capture" target="_blank" rel="noopener noreferrer"
+					class="group flex flex-col p-5 rounded-lg bg-drac-bg/50 border border-drac-current/60 hover:border-drac-purple/40 hover:bg-drac-bg/70 transition-all">
+					<div class="flex items-start justify-between gap-3 mb-2">
+						<div class="flex items-center gap-2.5">
+							<span class="w-9 h-9 rounded-lg bg-drac-purple/15 flex items-center justify-center flex-shrink-0">
+								<svg class="w-4 h-4 text-drac-purple" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M6.827 6.175A2.31 2.31 0 0 1 5.186 7.23c-.38.054-.757.112-1.134.175C2.999 7.58 2.25 8.507 2.25 9.574V18a2.25 2.25 0 0 0 2.25 2.25h15A2.25 2.25 0 0 0 21.75 18V9.574c0-1.067-.75-1.994-1.802-2.169a47.865 47.865 0 0 0-1.134-.175 2.31 2.31 0 0 1-1.64-1.055l-.822-1.316a2.192 2.192 0 0 0-1.736-1.039 48.774 48.774 0 0 0-5.232 0 2.192 2.192 0 0 0-1.736 1.039l-.823 1.316Z" /><path stroke-linecap="round" stroke-linejoin="round" d="M16.5 12.75a4.5 4.5 0 1 1-9 0 4.5 4.5 0 0 1 9 0ZM18.75 10.5h.008v.008h-.008V10.5Z" /></svg>
+							</span>
+							<h3 class="font-semibold text-drac-fg group-hover:text-drac-purple transition-colors font-mono text-sm">claude-capture</h3>
+						</div>
+						<svg class="w-4 h-4 text-drac-comment group-hover:text-drac-purple transition-colors flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 6H5.25A2.25 2.25 0 0 0 3 8.25v10.5A2.25 2.25 0 0 0 5.25 21h10.5A2.25 2.25 0 0 0 18 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25" /></svg>
+					</div>
+					<p class="text-drac-comment text-sm leading-relaxed flex-1">
+						Chrome extension to capture a region or selected text on any page and analyze it with Claude using your existing claude.ai session.
+					</p>
+					<div class="flex flex-wrap gap-2 mt-4">
+						<span class="px-2 py-0.5 bg-drac-yellow/10 text-drac-yellow text-xs font-medium rounded border border-drac-yellow/20">JavaScript</span>
+						<span class="px-2 py-0.5 bg-drac-cyan/10 text-drac-cyan text-xs font-medium rounded border border-drac-cyan/20">Chrome Extension</span>
+						<span class="px-2 py-0.5 bg-drac-purple/10 text-drac-purple text-xs font-medium rounded border border-drac-purple/20">Claude AI</span>
+					</div>
+				</a>
+
+				<!-- homebrew-phps -->
+				<a href="https://github.com/aa-ardanirahman/homebrew-phps" target="_blank" rel="noopener noreferrer"
+					class="group flex flex-col p-5 rounded-lg bg-drac-bg/50 border border-drac-current/60 hover:border-drac-pink/40 hover:bg-drac-bg/70 transition-all">
+					<div class="flex items-start justify-between gap-3 mb-2">
+						<div class="flex items-center gap-2.5">
+							<span class="w-9 h-9 rounded-lg bg-drac-pink/15 flex items-center justify-center flex-shrink-0">
+								<svg class="w-4 h-4 text-drac-pink" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M6.75 7.5l3 2.25-3 2.25m4.5 0h3m-9 8.25h13.5A2.25 2.25 0 0 0 21 18V6a2.25 2.25 0 0 0-2.25-2.25H5.25A2.25 2.25 0 0 0 3 6v12a2.25 2.25 0 0 0 2.25 2.25Z" /></svg>
+							</span>
+							<h3 class="font-semibold text-drac-fg group-hover:text-drac-pink transition-colors font-mono text-sm">homebrew-phps</h3>
+						</div>
+						<svg class="w-4 h-4 text-drac-comment group-hover:text-drac-pink transition-colors flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 6H5.25A2.25 2.25 0 0 0 3 8.25v10.5A2.25 2.25 0 0 0 5.25 21h10.5A2.25 2.25 0 0 0 18 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25" /></svg>
+					</div>
+					<p class="text-drac-comment text-sm leading-relaxed flex-1">
+						Homebrew tap for <span class="font-mono text-drac-fg">phps</span> — a fast PHP version switcher for macOS. Install once, switch versions with a single command.
+					</p>
+					<div class="flex flex-wrap gap-2 mt-4">
+						<span class="px-2 py-0.5 bg-drac-orange/10 text-drac-orange text-xs font-medium rounded border border-drac-orange/20">Ruby</span>
+						<span class="px-2 py-0.5 bg-drac-yellow/10 text-drac-yellow text-xs font-medium rounded border border-drac-yellow/20">Homebrew</span>
+						<span class="px-2 py-0.5 bg-drac-purple/10 text-drac-purple text-xs font-medium rounded border border-drac-purple/20">PHP</span>
+					</div>
+				</a>
+			</div>
+
+			<div class="mt-5 text-center">
+				<a href="https://github.com/ardani" target="_blank" rel="noopener noreferrer"
+					class="inline-flex items-center gap-2 text-sm text-drac-comment hover:text-drac-cyan transition-colors font-mono">
+					See more on GitHub
+					<svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" /></svg>
+				</a>
 			</div>
 		</section>
 

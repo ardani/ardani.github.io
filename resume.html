@@ -143,6 +143,37 @@
 			line-height: 1.5;
 		}
 
+		/* ---- Projects ---- */
+		.project { margin-bottom: 8px; }
+		.project:last-child { margin-bottom: 0; }
+		.project-header {
+			display: flex;
+			justify-content: space-between;
+			align-items: baseline;
+			gap: 8px;
+		}
+		.project-name {
+			font-size: 10pt;
+			font-weight: 700;
+		}
+		.project-link {
+			font-size: 9pt;
+			color: var(--text-secondary);
+			white-space: nowrap;
+		}
+		.project-desc {
+			font-size: 9.5pt;
+			color: var(--text-secondary);
+			line-height: 1.45;
+			margin-top: 1px;
+		}
+		.project-tags {
+			font-size: 8.5pt;
+			color: var(--text-secondary);
+			margin-top: 2px;
+			font-style: italic;
+		}
+
 		/* ---- Education ---- */
 		.edu-header {
 			display: flex;
@@ -295,6 +326,33 @@
 			<div class="skills-value">MySQL, PostgreSQL, MongoDB, Firestore, Elasticsearch</div>
 			<div class="skills-label">Tools</div>
 			<div class="skills-value">Git, GitHub, Jira, REST APIs, WebSockets, Queue Systems (Redis, Horizon)</div>
+		</div>
+	</section>
+
+	<!-- Open Source Projects -->
+	<section class="section">
+		<div class="section-title">Open Source Projects</div>
+
+		<div class="project">
+			<div class="project-header">
+				<div class="project-name">claude-capture</div>
+				<a class="project-link" href="https://github.com/aa-ardanirahman/claude-capture">github.com/aa-ardanirahman/claude-capture</a>
+			</div>
+			<div class="project-desc">
+				Chrome extension to capture a region or selected text on any page and analyze it with Claude using your existing claude.ai session.
+			</div>
+			<div class="project-tags">JavaScript &middot; Chrome Extension &middot; Claude AI</div>
+		</div>
+
+		<div class="project">
+			<div class="project-header">
+				<div class="project-name">homebrew-phps</div>
+				<a class="project-link" href="https://github.com/aa-ardanirahman/homebrew-phps">github.com/aa-ardanirahman/homebrew-phps</a>
+			</div>
+			<div class="project-desc">
+				Homebrew tap for <em>phps</em> — a fast PHP version switcher for macOS. Install once, switch versions with a single command.
+			</div>
+			<div class="project-tags">Ruby &middot; Homebrew &middot; PHP</div>
 		</div>
 	</section>
 
